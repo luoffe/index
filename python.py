@@ -141,4 +141,23 @@ mes = "marzo"
 print(txt.format(mes))
 # %% ??? Caracteres de escape/Metodos de cadena
 txt = "We are the so-called \"Vikings\" from the north."
+# %%Casos cuando boolean vuelve false
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+# %% Vuelve false, cuando el metodo incorrecto
+class myclass():
+  def __len__(self):
+    return 0
+
+myobj = myclass()
+print(bool(myobj))
+
+# %% determinar si un objeto es de cierto tipo de datos
+x = 200
+print(isinstance(x, int))
 # %%
