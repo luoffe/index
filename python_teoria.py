@@ -162,5 +162,155 @@ x = 200
 print(isinstance(x, int))
 # %%
 thislist = ["apple", "banana", "cherry"]
-print(thislist[1])
+n = int (input())
+if n >= 0 and n <=2:
+ print(thislist[n])
+elif n >= -3:
+ print(thislist[n])
+
+
+# %%
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist
+print(mylist)
+
+thislist.insert(1, "watermelon")
+print(mylist)
+
+
+# %%
+def max (x,y):
+ if x > y:
+  print (x)
+ else:
+  print (y)
+
+max (8,5)
+
+# %%
+def my_function():
+  print("Hello from a function")
+
+my_function()
+# %%
+def max_de_3(x, y, z):
+ if x > y and x > z:
+  print("Número mayor es "+str(x))
+ elif y > x and y > z:
+  print("Número mayor es "+str(y))
+ elif z > y and z > x:
+  print("Número mayor es "+str(z))
+ else: print ("Son iguales.")
+
+x = input ()
+print(x)
+y = input ()
+print(y)
+z = input ()
+print(z)
+
+max_de_3(x, y, z)
+
+# %%
+listado_de_vocales = ("a", "e", "u", "i", "o")
+def tipo_de_caracter(i):
+ if i in listado_de_vocales:
+  print("True")
+ else: print("False")
+i = input()
+print (i)
+tipo_de_caracter(i)
+# %%
+def sum (name_list):
+ i=0
+ for num in name_list:
+  i+=num
+ else:
+  print(i)
+
+list1 = list (range(1,4))
+print(list1)
+#sum (list1)
+
+def multip(name_list):
+ i=0
+ while i<len(name_list):
+  for num in name_list:
+      if i == 0:
+       num=a
+       if i > 0:
+         multiple=a*num
+         multiple=a
+  i+=1
+  
+
+    
+#multip(list1)
+
+def multip (lista):
+    multiplicacion = 1
+    for i in lista:
+        multiplicacion *= i
+    return multiplicacion
+
+multip (list1)
+# %% funcion len
+list1=[1, 2, 3]
+def calcular_longitud (name):
+ cont = 0
+ for i in name:
+   cont += 1
+ return cont
+
+calcular_longitud (list1)
+# %%
+def inversa(text):
+  rtext=""
+  i=j=-1
+  while n<len(text):
+   rtext=text[i:]
+   if i == -1:
+     i-=1
+     rtext=rtext+text[i:j]
+     if i < -1:
+       i-=1
+       j-=1
+       rtext=rtext+text[i:j]
+       print(rtext)
+   
+     
+"""txt="hola "
+print(txt[-1:])
+rtxt=txt[-1:]
+print(txt[-2:-1])
+rtxt=rtxt+txt[-2:-1]
+print(rtxt)"""
+
+inversa("estoy bien")
+# %%
+def alreves (text):
+  print(text[::-1])
+
+alreves("hola")
+# %%
+def superposicion(list1,list2):
+  for i in list1:
+    for j in list2:
+      if i == j:
+       return True
+  return False
+
+l1 = [1, 7, 4]
+l2 = [5, 2, 3]
+
+superposicion(l1,l2)
+# %%
+def alreves (text):
+  rtext = text[::-1]
+  if rtext == text:
+    return True
+  else:
+   return False
+
+alreves ("hola")
 # %%
