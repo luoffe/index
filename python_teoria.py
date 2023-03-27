@@ -314,3 +314,69 @@ def alreves (text):
 
 alreves ("hola")
 # %%
+""""Definir una función generar_n_caracteres() 
+que tome un entero n
+y devuelva el caracter multiplicado por n. 
+Por ejemplo: generar_n_caracteres(5, "x")
+debería devolver "xxxxx"."""
+
+"""def generar_n_caracteres(x,n):
+ i=0
+ txt = ""
+ while i<x:
+   txt+=n
+   i+=1
+ else: print(txt)
+
+generar_n_caracteres(3,"y")"""
+
+def generar_n_caracteres(x,n):
+  print(x * n)
+
+generar_n_caracteres(7,"o")
+
+# %%
+def procedimiento(name_list):
+  for j in name_list:
+   print (j * "*")
+    
+  
+
+l2 = [5, 2, 3]
+procedimiento(l2)
+
+# %%
+def max_in_list(lista):
+    inicio = 0
+    for i in lista:
+     if i > inicio:
+        inicio = i
+    return inicio
+
+l2 = [5, 2, 3]
+max_in_list(l2)
+# %%
+def mas_larga(listado):
+  cont=0
+  for i in listado:
+  
+    cont += 1
+  return cont
+
+l2 = ["Tom", "Oliver"]
+mas_larga(l2)
+# %%
+l2 = ["Tom"]
+str 
+#%%
+lista = ["Tom", "Oliver", "Ana", "Oliver2"]
+def fun(lista):
+  palabas_mas_larga = ""
+  chars_anteriores = 0
+  for palabra in lista:
+    chars = len(palabra)
+    if chars > chars_anteriores:
+      palabas_mas_larga = palabra
+  return palabas_mas_larga
+res = fun(lista)
+# %%
