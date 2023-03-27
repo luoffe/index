@@ -161,3 +161,6 @@ print(bool(myobj))
 x = 200
 print(isinstance(x, int))
 # %%
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+# %%
