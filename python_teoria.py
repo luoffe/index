@@ -385,28 +385,74 @@ que reciba una palabra y cuente cuantas letras "a" tiene,
 cuantas letras "e" tiene y así hasta completar todas las vocales.
 Se puede hacer que el usuario sea quien elija la palabra."""
 palabra = input ()
-cant_a=cant_o=cant_u=cant_e=cant_i=0
+palabra = palabra.lower()
 v_a = "a"
 v_o = "o"
 v_u = "u"
 v_e = "e"
 v_i = "i"
+cant_a=cant_o=cant_u=cant_e=cant_i=0
 for i in palabra:
-  if i == v_a:
-    cant_a+=1
-    if i == v_o:
-      cant_o+=1
-      if i == v_u:
-        cant_u+=1
-        if i == v_e:
-          cant_e+=1
-          if i == v_i:
-            cant_i+=1
-          else: continue
+ 
+ 
+ if i == v_a:
+   cant_a+=1
+   continue
+ elif i == v_o:
+   cant_o+=1
+   continue
+ elif i == v_u:
+   cant_u+=1
+   continue
+ elif i == v_e:
+   cant_e+=1
+   continue
+ elif i == v_i:
+   cant_i+=1
+   continue
+ else: continue
 print("La palabra "+ palabra + " tiene:")
-print(cant_a + "letras a") 
-print(cant_o + "letras o")
-print(cant_u + "letras u") 
-print(cant_e + "letras e") 
-print(cant_i + "letras i")
+print(str(cant_a) + " letras a")
+print(str(cant_o) + " letras o")
+print(str(cant_u) + " letras u") 
+print(str(cant_e) + " letras e")
+print(str(cant_i) + " letras i")
 # %%
+def contar_vocales(cadena):
+    cadena = cadena.lower()
+    vocales = "aeiou"
+   
+    for x in vocales:
+        contador = 0
+        for i in cadena:
+            if i == x:
+                contador += 1
+        print ("Hay %d %s." + str(contador) + str(x))
+
+cad = "Ordenador"
+contar_vocales(cad)        
+# %%
+str1 = "avadaquedabra"
+print(str1[2:10:3])
+# %%
+str1 = "hola"
+str1  = str1 + "b"
+#print(str1)
+#str1[2]="b" - error, solo replace o slicing para cambiar elemento en cadena
+str1 =  "b" + str1[1:]
+print(str1)
+# %%
+txt = "La palabra: tiene 6 vocales"
+lista = txt.split(":")
+print(lista)
+l1 = txt.split()
+print(l1)
+# %%
+""""Escribir un pequeño programa donde:
+- Se ingresa el año en curso.
+- Se ingresa el nombre y el año de nacimiento de tres personas.
+- Se calcula cuántos años cumplirán durante el año en curso.
+- Se imprime en pantalla. """
+
+year = input("Ingresa el año en curso:")
+
