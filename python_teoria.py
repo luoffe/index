@@ -265,18 +265,16 @@ def calcular_longitud (name):
 calcular_longitud (list1)
 # %%
 def inversa(text):
-  rtext=""
-  i=j=-1
-  while n<len(text):
-   rtext=text[i:]
-   if i == -1:
-     i-=1
-     rtext=rtext+text[i:j]
-     if i < -1:
-       i-=1
-       j-=1
-       rtext=rtext+text[i:j]
-       print(rtext)
+  text_inverso=""
+  indice_neg = -1
+  indice_pos = 0
+  j = 0
+  while j < len(text):
+   text_inverso = text[i]
+   i-=1
+   j+=1
+  print(text_inverso)
+   
    
      
 """txt="hola "
@@ -454,5 +452,7 @@ print(l1)
 - Se calcula cuántos años cumplirán durante el año en curso.
 - Se imprime en pantalla. """
 
-year = input("Ingresa el año en curso:")
+# %%
+
+tuple = (10,)
 
