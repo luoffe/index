@@ -380,3 +380,33 @@ def fun(lista):
   return palabas_mas_larga
 res = fun(lista)
 # %%
+""""Crear una función contar_vocales(), 
+que reciba una palabra y cuente cuantas letras "a" tiene, 
+cuantas letras "e" tiene y así hasta completar todas las vocales.
+Se puede hacer que el usuario sea quien elija la palabra."""
+palabra = input ()
+cant_a=cant_o=cant_u=cant_e=cant_i=0
+v_a = "a"
+v_o = "o"
+v_u = "u"
+v_e = "e"
+v_i = "i"
+for i in palabra:
+  if i == v_a:
+    cant_a+=1
+    if i == v_o:
+      cant_o+=1
+      if i == v_u:
+        cant_u+=1
+        if i == v_e:
+          cant_e+=1
+          if i == v_i:
+            cant_i+=1
+          else: continue
+print("La palabra "+ palabra + " tiene:")
+print(cant_a + "letras a") 
+print(cant_o + "letras o")
+print(cant_u + "letras u") 
+print(cant_e + "letras e") 
+print(cant_i + "letras i")
+# %%
